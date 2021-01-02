@@ -2,8 +2,8 @@ export type Expr = Inc
                  | Dec
                  | Left
                  | Right
-                 | Input
-                 | Output
+                 | Get
+                 | Put
                  | If;
 
 export type Program = Expr[];
@@ -24,12 +24,12 @@ export interface Right {
   type: 'Right',
 }
 
-export interface Input {
-  type: 'Input',
+export interface Get {
+  type: 'Get',
 }
 
-export interface Output {
-  type: 'Output',
+export interface Put {
+  type: 'Put',
 }
 
 export interface If {
