@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "es2015",
+    "outDir": "build",
+    "strict": true,
+    "strictNullChecks": true,
+    "esModuleInterop": true
+  }
+}

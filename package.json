@@ -1,0 +1,12 @@
+{
+  "name": "brainfuck",
+  "version": "1.0.0",
+  "description": "brainfuck tools",
+  "main": "index.js",
+  "author": "gamburgm",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "typescript": "^4.1.3"
+  }
+}
