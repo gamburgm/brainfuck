@@ -3,7 +3,8 @@ export type Expr = Inc
                  | Left
                  | Right
                  | Input
-                 | Output;
+                 | Output
+                 | If;
 
 export type Program = Expr[];
 
