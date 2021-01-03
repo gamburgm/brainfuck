@@ -21,7 +21,7 @@ export function parse(text: string): Program {
   }
 }
 
-function parseTokens(tokens: ProgInput[]): ParseResult {
+export function parseTokens(tokens: ProgInput[]): ParseResult {
   const prog: Program = [];
   while (tokens.length !== 0) {
     const tok: ProgInput = tokens.pop() as ProgInput;
@@ -37,7 +37,7 @@ function parseTokens(tokens: ProgInput[]): ParseResult {
   return { prog, hadBracket: false };
 }
 
-function parseExpr(c: ProgInput, tokens: ProgInput[]): ParseExpr {
+export function parseExpr(c: ProgInput, tokens: ProgInput[]): ParseExpr {
   // FIXME why does `switch` work when `if` doesn't?
   switch (c) {
     case '+':
@@ -67,3 +67,5 @@ function parseExpr(c: ProgInput, tokens: ProgInput[]): ParseExpr {
 function isProgInput(c: string): c is ProgInput {
   return c in inputChars;
 }
+
+export default parse;
